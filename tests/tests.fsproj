@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <Compile Include="day1\MaxCaloriesTests.fs" />
+    <Compile Include="day2\RockPaperScissorScoreCalculatorTests.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 

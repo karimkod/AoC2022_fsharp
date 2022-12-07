@@ -11,6 +11,10 @@
     <Content Include="DataFiles\day1_maxcalories">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="DataFiles\day2_rockpaperscissorparty">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Compile Include="day2\RockPaperSissorScoreCalculator.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
