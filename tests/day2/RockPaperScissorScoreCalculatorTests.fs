@@ -6,15 +6,15 @@ open Xunit
 
 
 [<Theory>]
-[<InlineData("A X", 4)>] 
+[<InlineData("A X", 3)>] 
 [<InlineData("B Y", 5)>] 
-[<InlineData("C Z", 6)>] 
-[<InlineData("A Z", 3)>] 
+[<InlineData("C Z", 7)>] 
+[<InlineData("A Z", 8)>] 
 [<InlineData("B X", 1)>] 
-[<InlineData("C Y", 2)>] 
-[<InlineData("A Y", 8)>] 
+[<InlineData("C Y", 6)>] 
+[<InlineData("A Y", 4)>] 
 [<InlineData("B Z", 9)>] 
-[<InlineData("C X", 7)>] 
+[<InlineData("C X", 2)>] 
 let ``Score for a single pair`` (input:string,  expectedScore:int) =
     Assert.Equal(expectedScore, [input] |> CalculateScore)
     
@@ -26,4 +26,4 @@ let ``Get Score for a complete party`` () =
         "B X"
         "C Z"
     ]
-    Assert.Equal(15, input |> CalculateScore)
+    Assert.Equal(12, input |> CalculateScore)
